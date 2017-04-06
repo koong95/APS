@@ -1,0 +1,149 @@
+Info: Nothing to build for BFS_키순서
+Info: Nothing to build for BFS_키순서
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_키순서
+23:55:48 **** Incremental Build of configuration Debug for project BFS_키순서 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:16:6: warning: unused variable 'N' [-Wunused-variable]
+  int N = 6;
+      ^
+g++ -o BFS_키순서.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_키순서
+23:57:01 **** Rebuild of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:16:6: warning: unused variable 'N' [-Wunused-variable]
+  int N = 6;
+      ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+23:57:11 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:16:6: warning: unused variable 'N' [-Wunused-variable]
+  int N = 6;
+      ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+00:00:27 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot open output file BFS_tall.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+00:10:25 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+..\src\BFS_tall.cpp:47:37: error: invalid operands of types 'const char [2]' and 'int' to binary 'operator<<'
+   cout << "big[" << i < "]" << big[i] << endl;
+                                     ^
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+00:10:32 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot open output file BFS_tall.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+00:10:37 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot open output file BFS_tall.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:10:52 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+00:11:20 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_tall
+00:15:13 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_tall
+00:18:20 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=1 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+00:18:43 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for BFS_tall
+Info: Nothing to build for DigitSum
+Info: Nothing to build for KMP
+Info: Nothing to build for Sort
+00:38:22 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 

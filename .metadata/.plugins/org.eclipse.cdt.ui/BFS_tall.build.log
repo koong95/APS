@@ -1,0 +1,11 @@
+00:38:22 **** Incremental Build of configuration Debug for project BFS_tall ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BFS_tall.o" "..\\src\\BFS_tall.cpp" 
+..\src\BFS_tall.cpp: In function 'int main()':
+..\src\BFS_tall.cpp:35:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0 ; j<node[here].size() ; j++){
+                   ^
+g++ -o BFS_tall.exe "src\\BFS_tall.o" 
+
+00:38:24 Build Finished (took 1s.493ms)
+

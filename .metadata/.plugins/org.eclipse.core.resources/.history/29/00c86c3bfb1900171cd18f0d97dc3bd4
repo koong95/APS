@@ -1,0 +1,56 @@
+//============================================================================
+// Name        : KMP.cpp
+// Author      : koong
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+#define MAX_LEN 10000
+class KMP{
+	KMP();
+	~KMP();
+public:
+	int fail[MAX_LEN];
+	void GetFail(char* p);
+	void Compare(char* s);
+	void StringMatch(char* s, char* p);
+};
+
+KMP::KMP()
+{
+	for(int i=0 ; i<MAX_LEN ; i++)
+		fail[i] = 0;
+}
+
+KMP::~KMP()
+{
+}
+
+void KMP::GetFail(char* s)
+{
+	int i,j;
+	fail[0] = 0;
+
+	for(i=0 ; i<)
+
+}
+
+void KMP::StringMatch(char* s, char* p)
+{
+	GetFail(p);
+	Compare(s);
+}
+
+int main() {
+	cout << "Search matching string" << endl; // prints Sorting Algorithm
+	char S[100] = "banana";
+	char P[100] = "ana";
+
+	KMP kmp;
+	kmp.StringMatch(S, P);
+	return 0;
+}

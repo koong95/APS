@@ -1,0 +1,96 @@
+//============================================================================
+// Name        : KMP.cpp
+// Author      : koong
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+#define MAX_LEN 10000
+class KMP{
+public:
+	KMP();
+	~KMP();
+public:
+	int fail[MAX_LEN];
+	void GetFail(char* p);
+	void Compare(char* s, char* p);
+	int StringMatch(char* s, char* p);
+	int size_of(char* s);
+};
+
+KMP::KMP()
+{
+	for(int i=0 ; i<MAX_LEN ; i++)
+		fail[i] = 0;
+}
+
+KMP::~KMP()
+{
+}
+
+int KMP::size_of(char* s)
+{
+	int i = 0;
+	while(1){
+		if(s[i] == '\0'){
+			return i;
+		}
+		i++;
+	}
+	return -1;
+}
+
+void KMP::GetFail(char* p)
+{
+	int j=0;
+	for(int i=1 ; i<size_of(p) ; i++){
+		while(j>0 && p[i]!=p[j]){
+			j = fail[j-1];
+		}
+		if(p[i] == p[j])
+			fail[i] = ++j;
+	}
+}
+
+void KMP::Compare(char* s, char* p)
+{
+    int n = size_of(s);
+    int m = size_of(p);
+    int j=0;
+    GetFail(p);
+
+    for(int i=0 ; i<n ; i++){
+    	while(j>0 && s[i] != p[i])
+    		j = fail[j-1];
+
+    	if(s[i] == p[j]){
+    		if(j == m-1){
+    			cout << "matched" << endl;
+    			j=fail[j];
+    		}
+    		else
+    			j++;
+    	}
+    }
+}
+
+int KMP::StringMatch(char* s, char* p)
+{
+	Compare(s, p);
+
+	return 0;
+}
+
+int main() {
+	cout << "Search matching string" << endl; // prints Sorting Algorithm
+	char S[100] = "banana";
+	char P[100] = "ana";
+
+	KMP kmp;
+	kmp.StringMatch(S, P);
+	return 0;
+}

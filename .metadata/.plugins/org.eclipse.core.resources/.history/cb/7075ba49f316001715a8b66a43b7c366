@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : Sort.cpp
+// Author      : koong
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+void mergesort(int A[], int left, int right);
+void merge(int A[], int left, int mid, int right);
+
+int main() {
+	cout << "Sorting Algorithm" << endl; // prints Sorting Algorithm
+
+	int A[4] = {3,4,5,2};
+	mergesort(A, 0, 3);
+
+
+	return 0;
+}
+
+void mergesort(int A[], int left, int right)
+{
+	int mid;
+	if(left<right){
+		mid = (left+right)/2;
+		mergesort(A, left, mid);
+		mergesort(A, mid+1, right);
+		merge(A, left, mid, right);
+	}
+}
+
+void merge(int A[], int left, int mid, int right)
+{
+
+}
+

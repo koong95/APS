@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : KMP.cpp
+// Author      : koong
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+#define MAX_LEN 10000
+class KMP{
+public:
+	int fail[MAX_LEN];
+	void GetFail(char* s);
+
+
+};
+
+void KMP::GetFail(char* s)
+{
+
+}
+
+int main() {
+	cout << "Sorting Algorithm" << endl; // prints Sorting Algorithm
+	return 0;
+}

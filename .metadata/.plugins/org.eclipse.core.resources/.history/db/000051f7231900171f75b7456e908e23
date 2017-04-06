@@ -1,0 +1,122 @@
+//============================================================================
+// Name        : Sort.cpp
+// Author      : koong
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <memory.h>
+using namespace std;
+
+void mergesort(int A[], int left, int right);
+void merge(int A[], int left, int mid, int right);
+
+int main() {
+	cout << "Sorting Algorithm" << endl; // prints Sorting Algorithm
+	int A[10] = { 38, 23, 1 , 2, 11, 8, 4, 9, 1, 10};
+	mergesort(A, 0, 9);
+
+	for(int i=0 ; i<10 ; i++)
+		cout << A[i] << ",";
+	cout << endl;
+	return 0;
+}
+/*
+void mergesort(int A[], int left, int right)
+{
+	int mid=0;
+	if(left<right){
+		mid = (left+right)/2;
+		mergesort(A, left, mid);
+		mergesort(A, mid+1, right);
+		merge(A, left, mid, right);
+	}
+}
+
+void merge(int A[], int left, int mid, int right)
+{
+	int i,j,k;
+	i = left;
+	j = mid+1;
+	k = left;
+
+	int temp[10];
+//	memset(temp, 0, sizeof(int)*10);
+
+	while(i<mid && j<right){
+		if(A[i] <= A[j]){
+			temp[k++] = A[i++];
+		}
+		else{
+			temp[k++] = A[j++];
+		}
+	}
+
+	if(i>mid){
+		for(int m=i ; m<=right ; m++){
+			temp[k++] = A[m];
+		}
+	}
+	else{
+		for(int m=i ; m<=mid ; m++){
+			temp[k++] = A[m];
+		}
+	}
+
+	for(int m=left ; m<=right ; m++){
+		A[m] = temp[m];
+	}
+}
+*/
+void mergesort(int A[], int left, int right)
+{
+	int mid;
+
+	if(left < right){
+		mid = (left+right)/2;
+
+		mergesort(A, left, mid);
+		mergesort(A, mid+1, right);
+		merge(A, left, mid, right);
+	}
+}
+
+void merge(int A[], int left, int mid, int right)
+{
+	int i, j, k;
+
+	int t_A[10];
+
+	i = left;
+	j = mid+1;
+	k = left;
+
+	while(i<=mid && j<=right){
+		if(A[i] <= A[j]){
+			t_A[k++] = A[i];
+			i++;
+		}
+		else{
+			t_A[k++] = A[j];
+			j++;
+		}
+	}
+
+	if(i>mid){
+		for(int m=i ; m<=right ; m++){
+			t_A[k++] = A[m];
+		}
+	}
+	else{
+		for(int m=i ; m<=mid ; m++){
+			t_A[k++] = A[m];
+		}
+	}
+
+	for(int m=left ; m<=right ; m++){
+		A[m] = t_A[m];
+	}
+}
+#endif
